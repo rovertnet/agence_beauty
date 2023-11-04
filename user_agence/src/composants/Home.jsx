@@ -18,7 +18,7 @@ function Home() {
               <h2 className=" md:text-2xl text-2xl font-bold text-white mb-6 leading-relaxed">
                 Je suis le premier de ce bannier, en répresentant Artha beauté.
               </h2>
-              <p className=" text-[#f3f4f5] text-lg mb-5">
+              <p className=" text-[#f3f4f5] text-lg mb-5 md:text-justify">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Dignissimos sint facere ad, veniam earum quas quasi! Commodi
                 officiis, aperiam libero, asperiores cum quasi optio dolorum
