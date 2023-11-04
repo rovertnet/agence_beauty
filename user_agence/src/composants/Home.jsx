@@ -2,7 +2,7 @@
 function Home() {
   return (
     <>
-      <div className=" md:px-12 p-4 md:h-[600px] h-[550px] max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+      <div className=" md:px-12 p-4 max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
         <div className=" md:p-9 px-4 py-9">
           <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10">
             {/* image */}

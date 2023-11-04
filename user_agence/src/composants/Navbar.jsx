@@ -61,7 +61,9 @@ function Navbar() {
 
       <div
         className={` space-y-4 px-6 pt-24 pb-5 w-[150px] h-full bg-[#c654c6] ${
-          showMenu ? "block fixed top-0 right-0 left-0" : "hidden"
+          showMenu
+            ? "block fixed top-0 right-0 left-0 transition-transform duration-200"
+            : "hidden transition-all duration-200"
         }`}
       >
         {navItems.map(({ link, path }) => (
