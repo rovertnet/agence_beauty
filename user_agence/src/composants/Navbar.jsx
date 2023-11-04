@@ -39,7 +39,7 @@ function Navbar() {
           </div>
           {/* Bouton connexion */}
           <div className=" space-x-12 hidden md:flex items-center">
-            <button className=" bg-pink-500 py-2 px-4 translate-all duration-300 rounded-3xl text-white hover:border-1 hover:border-pink-500 hover:text-pink-500 hover:bg-white">
+            <button className=" bg-pink-500 py-2 px-4 translate-all duration-300 rounded-3xl text-white hover:border-2 hover:border-pink-500 hover:text-pink-500 hover:bg-white">
               Sign up
             </button>
           </div>

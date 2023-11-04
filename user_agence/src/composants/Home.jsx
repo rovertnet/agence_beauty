@@ -2,7 +2,7 @@
 function Home() {
   return (
     <>
-      <div className=" md:px-12 p-4 max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+      <div className=" md:px-12 p-4 md:h-[600px] h-[550px] max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
         <div className=" md:p-9 px-4 py-9">
           <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10">
             {/* image */}
@@ -24,12 +24,12 @@ function Home() {
                 officiis, aperiam libero, asperiores cum quasi optio dolorum
                 quidem, tenetur est laboriosam aliquam.
               </p>
-              <div className=" space-x-4 mb-5">
+              <div className=" space-x-5 space-y-4 ">
                 <button className=" py-3 px-6 rounded-3xl bg-pink-500 text-white hover:bg-purple-500 transition-all duration-300">
-                  contact
+                  contactez-nous
                 </button>
-                <button className="py-3 px-6 rounded-3xl bg-[#ecc6de] text-white hover:bg-pink-500 transition-all duration-300">
-                  about
+                <button className="py-3 px-6 rounded-3xl bg-[#ecc6de] text-white hover:bg-white hover:text-[#ecc6de] hover:border-2 hover:border-[#ecc6de] transition-all duration-300">
+                  A propos
                 </button>
               </div>
             </div>
