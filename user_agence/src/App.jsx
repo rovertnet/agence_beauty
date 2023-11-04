@@ -2,6 +2,7 @@
 import './App.css'
 import About from './composants/About';
 import Home from './composants/Home';
+import Mission from './composants/Mission';
 import Navbar from './composants/Navbar';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Mission />
     </>
   );
 }

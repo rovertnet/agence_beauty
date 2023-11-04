@@ -26,7 +26,7 @@ function About() {
                     src="../../public/home.png"
                     alt="about"
                   />
-                  <h5 className=" text-2xl text-white px-5 text-center mt-2">
+                  <h5 className=" text-2xl font-bold text-white px-5 text-center mt-2">
                     Nos outils de travail
                   </h5>
                   <p className="px-5 text-center mt-2 text-base text-slate-300">
@@ -42,7 +42,7 @@ function About() {
                     src="../../public/ART.png"
                     alt="about"
                   />
-                  <h5 className=" text-2xl text-slate-900 px-5 text-center mt-2">
+                  <h5 className=" text-2xl text-slate-900 font-bold px-5 text-center mt-2">
                     CEO MArthe Matundu Y.
                   </h5>
                   <p className="px-5 text-center mt-2 text-base">
@@ -58,7 +58,7 @@ function About() {
                     src="../../public/robertr.png"
                     alt="about"
                   />
-                  <h5 className=" text-2xl text-white px-5 text-center mt-2">
+                  <h5 className=" text-2xl text-white font-bold px-5 text-center mt-2">
                     CTO Robert Matundu K.
                   </h5>
                   <p className="px-5 text-center mt-2 text-base text-slate-50">
