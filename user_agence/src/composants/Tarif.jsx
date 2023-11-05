@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Tarif() {
-  const [togglePrix, setTogglePrix] = useState()
+  const [togglePrix, setTogglePrix] = useState(false);
   const packages = [
     {
       name: "Jour",
@@ -49,7 +49,7 @@ function Tarif() {
               <span className=" mr-8 font-semibold text-2xl">Mariage</span>
               <div className=" w-14 h-6 bg-gray-300 rounded-full transition duration-300 ease-in-out">
                 <div
-                  className={` w-6 h-6 rounded-full transition duration-300 ease-in-out ${
+                  className={` w-6 h-6 rounded-full transition duration-300 ease-in-out space-x-3 ${
                     togglePrix ? " bg-black ml-8" : " bg-gray-400"
                   }`}
                 ></div>

@@ -50,9 +50,9 @@ function Navbar() {
               className=" text-white focus:outline-none focus:text-[#c654c6]"
             >
               {showMenu ? (
-                <FaXmark className=" h-8 w-8 text-[#c654c6]" />
+                <FaXmark className=" h-8 w-8 text-[#c654c6] transition-all duration-700" />
               ) : (
-                <BiMenuAltRight className=" h-10 w-10 text-[#c654c6]" />
+                <BiMenuAltRight className=" h-10 w-10 text-[#c654c6] transition-all duration-700" />
               )}
             </button>
           </div>
@@ -61,9 +61,7 @@ function Navbar() {
 
       <div
         className={` space-y-4 px-6 pt-24 pb-5 w-[150px] h-full bg-[#c654c6] ${
-          showMenu
-            ? "block fixed top-0 right-0 left-0 transition-transform duration-200"
-            : "hidden transition-all duration-200"
+          showMenu ? "block fixed top-0 right-0 left-0" : "hidden "
         }`}
       >
         {navItems.map(({ link, path }) => (

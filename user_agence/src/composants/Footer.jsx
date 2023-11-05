@@ -31,7 +31,7 @@ function Footer() {
               <input
                 type="submit"
                 value="Envoyer"
-                className=" px-4 py-1 -ml-4 rounded-md bg-fuchsia-500 text-base text-white hover:bg-slate-300 hover:text-[#410078] transition-all duration-700"
+                className=" px-4 py-1 -ml-4 rounded-md bg-fuchsia-500 text-base cursor-pointer text-white hover:bg-slate-300 hover:text-[#410078] transition-all duration-700"
               />
             </div>
           </div>
