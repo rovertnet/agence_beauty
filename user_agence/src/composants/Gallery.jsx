@@ -22,7 +22,7 @@ function Gallery() {
   return (
     <>
       <div className=" container mx-auto px-5 py-2 md:px-14">
-        <h2 className="md:text-4xl text-center text-3xl mb-10 font-extrabold leading-normal my-0">
+        <h2 className="md:text-4xl text-center text-3xl mb-10 font-extrabold leading-normal my-6">
           Nos réalisations <br />
           <span className="font-normal text-base mb-0">
             en images toutes

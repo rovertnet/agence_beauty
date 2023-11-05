@@ -20,7 +20,7 @@ function Tarif() {
       logo: "../../public/checked.png",
     },
     {
-      name: "Start",
+      name: "Mariage",
       adomicil: 55,
       salon: 50,
       description:
@@ -41,7 +41,7 @@ function Tarif() {
           </p>
 
           {/* Toggle prix */}
-          <div className=" mt-16">
+          <div className=" mt-8">
             <label
               htmlFor="Toggleprix"
               className=" inline-flex items-center cursor-pointer"
