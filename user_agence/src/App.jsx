@@ -4,6 +4,7 @@ import About from './composants/About';
 import Home from './composants/Home';
 import Mission from './composants/Mission';
 import Navbar from './composants/Navbar';
+import Tarif from './composants/Tarif';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Mission />
+      <Tarif />
     </>
   );
 }

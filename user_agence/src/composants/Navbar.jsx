@@ -17,7 +17,7 @@ function Navbar() {
     
   return (
     <>
-      <nav className=" bg-[#ecc6de] md:px-14 p-4 max-w-screen-2xl mx-auto text-purple-500 fixed top-0 right-0 left-0 shadow-md">
+      <nav className=" bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-purple-500 fixed top-0 right-0 left-0 shadow-md">
         <div className=" text-lg container mx-auto flex justify-between items-center">
           <div className=" flex items-center space-x-10">
             <a href="#">
