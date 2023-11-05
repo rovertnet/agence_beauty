@@ -17,21 +17,33 @@ function Gallery() {
       "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(13).webp",
       "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(14).webp",
       "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(15).webp",
+      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(15).webp",
     ];
   return (
     <>
-     <div className=" container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-        <div className="text-xl mb-5 font-semibold">Create a dynamic image gallery using Tailwind CSS in React - <a href="https://www.cluemediator.com"  className="text-blue-500 hover:underline" rel="noopener" >Clue Mediator</a></div>
+      <div className=" container mx-auto px-5 py-2 md:px-14">
+        <h2 className="md:text-4xl text-center text-3xl mb-10 font-extrabold leading-normal my-0">
+          Nos réalisations <br />
+          <span className="font-normal text-base mb-0">
+            en images toutes
+          </span>
+        </h2>
         <div className="-m-1 flex flex-wrap md:-m-2">
-            {images.map((image, index) => (
-            <div key={index} className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2">
-                <img className="block mx-auto h-full object-cover object-center rounded-lg shadow-md" src={image} />
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-1 md:p-2"
+            >
+              <img
+                className="block mx-auto h-full object-cover object-center rounded-lg shadow-md"
+                src={image}
+              />
             </div>
-            ))}
+          ))}
         </div>
-     </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Gallery

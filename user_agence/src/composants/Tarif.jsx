@@ -1,28 +1,28 @@
 import { useState } from "react";
 
 function Tarif() {
-  const [togglePrix, setTogglePrix] = useState(false)
+  const [togglePrix, setTogglePrix] = useState()
   const packages = [
     {
-      name: "Start",
-      adomicil: 60,
-      salon: 55,
+      name: "Jour",
+      adomicil: 20,
+      salon: 15,
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta",
+      logo: "../../public/checked.png",
+    },
+    {
+      name: "Soir",
+      adomicil: 25,
+      salon: 20,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta",
       logo: "../../public/checked.png",
     },
     {
       name: "Start",
-      adomicil: 60,
-      salon: 55,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta",
-      logo: "../../public/checked.png",
-    },
-    {
-      name: "Start",
-      adomicil: 60,
-      salon: 55,
+      adomicil: 55,
+      salon: 50,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta",
       logo: "../../public/checked.png",
@@ -87,23 +87,23 @@ function Tarif() {
               <ul className=" mt-4 space-y-2 px-4">
                 <li className=" flex gap-3 items-center">
                   <img src={pkg.logo} alt="" className=" w-4 h-4" />
-                  Travail
+                  Maquillage
                 </li>
                 <li className=" flex gap-3 items-center">
                   <img src={pkg.logo} alt="" className=" w-4 h-4" />
-                  Travail
+                  Pose cils--<span className="text-violet-600">$5</span>
                 </li>
                 <li className=" flex gap-3 items-center">
                   <img src={pkg.logo} alt="" className=" w-4 h-4" />
-                  Travail
+                  Bonus
                 </li>
                 <li className=" flex gap-3 items-center">
                   <img src={pkg.logo} alt="" className=" w-4 h-4" />
-                  Travail
+                  Bonus
                 </li>
                 <li className=" flex gap-3 items-center">
                   <img src={pkg.logo} alt="" className=" w-4 h-4" />
-                  Travail
+                  Bonus
                 </li>
               </ul>
               <div className=" w-full mx-auto mt-8 flex items-center justify-center">
