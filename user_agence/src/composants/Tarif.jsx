@@ -30,7 +30,7 @@ function Tarif() {
   ];
   return (
     <>
-      <div className="md:px-14 p-4 max-w-s mx-auto py-10">
+      <div className="md:px-14 p-4 max-w-s mx-auto py-10" id="tarif">
         <div className="text-center">
           <h2 className=" md:text-4xl text-3xl font-extrabold text-black mb-2">
             Nos tarifs

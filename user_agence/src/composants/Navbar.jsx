@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { BiMenuAltRight } from "react-icons/bi";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,11 +9,12 @@ function Navbar() {
     setShowMenu(!showMenu)
   }
   const navItems = [
-    { link: "Accueil", path: "Accueil" },
-    { link: "Services", path: "Services" },
-    { link: "Réalisations", path: "Realisations" },
-    { link: "Tarif", path: "Tarif" },
-    { link: "Contact", path: "Contacts" },
+    { link: "Accueil", path: "accueil" },
+    { link: "Services", path: "services" },
+    { link: "Réalisations", path: "realisation" },
+    { link: "Tarif", path: "tarif" },
+    { link: "Nous", path: "about" },
+    { link: "Contact", path: "contact" },
   ];
     
   return (
@@ -27,13 +29,16 @@ function Navbar() {
             {/* Show menu */}
             <ul className=" md:flex space-x-10 hidden">
               {navItems.map(({ link, path }) => (
-                <a
-                  className=" block hover:text-[#c654c6]"
+                <Link
+                  className=" block hover:text-[#c654c6] cursor-pointer"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
                   key={link}
-                  href={path}
+                  to={path}
                 >
                   {link}
-                </a>
+                </Link>
               ))}
             </ul>
           </div>
@@ -65,13 +70,16 @@ function Navbar() {
         }`}
       >
         {navItems.map(({ link, path }) => (
-          <a
-            className=" block text-[#ecc6de]  hover:text-[#c654c6]"
+          <Link
+            className=" block text-[#ecc6de]  hover:text-[#c654c6] cursor-pointer"
+            spy={true}
+            smooth={true}
+            offset={-100}
             key={link}
-            href={path}
+            to={path}
           >
             {link}
-          </a>
+          </Link>
         ))}
         <div className=" space-x-12 md:flex items-center">
           <button className=" bg-[#ecc6de] py-2 px-4 translate-all duration-300 rounded-3xl text-[#c654c6] hover:border-2 hover:border-[#c654c6] hover:text-[#c654c6] hover:bg-white">

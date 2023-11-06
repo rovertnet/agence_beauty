@@ -3,7 +3,7 @@
 function About() {
   return (
     <>
-      <div className=" my-10 md:mx-14 px-4 max-w-screen-2xl mx-auto">
+      <div className=" my-10 md:mx-14 px-4 max-w-screen-2xl mx-auto" id="about">
         <div className=" flex flex-col lg:flex-row justify-between items-start">
           <div className=" lg:w-1/4 px-3">
             <h3 className=" text-3xl text-black font-bold lg:w-1/2 mb-3">
