@@ -7,6 +7,7 @@ import Gallery from './composants/Gallery';
 import Home from './composants/Home';
 import Mission from './composants/Mission';
 import Navbar from './composants/Navbar';
+import Service from './composants/Service';
 import Tarif from './composants/Tarif';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About />
       <Mission />
+      <Service />
       <Tarif />
       <Banner />
       <Gallery />

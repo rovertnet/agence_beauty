@@ -10,7 +10,7 @@ function Navbar() {
   }
   const navItems = [
     { link: "Accueil", path: "accueil" },
-    { link: "Services", path: "services" },
+    { link: "Services", path: "service" },
     { link: "Réalisations", path: "realisation" },
     { link: "Tarif", path: "tarif" },
     { link: "Nous", path: "about" },
@@ -23,7 +23,7 @@ function Navbar() {
         <div className=" text-lg container mx-auto flex justify-between items-center">
           <div className=" flex items-center space-x-10">
             <a href="#">
-              <img className=" h-12" src="../../public/AB.png" alt="logo" />
+              <img className=" h-12" id="accueil" src="../../public/AB.png" alt="logo" />
             </a>
 
             {/* Show menu */}
