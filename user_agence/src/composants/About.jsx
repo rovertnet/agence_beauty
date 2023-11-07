@@ -7,7 +7,7 @@ function About() {
       <div className=" my-10 md:mx-14 px-4 max-w-screen-2xl mx-auto" id="about">
         <div className=" flex flex-col lg:flex-row justify-between items-start">
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -25,7 +25,7 @@ function About() {
           </motion.div>
           {/*  */}
           <motion.div
-            variants={fadeIn("up", 0.2)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
