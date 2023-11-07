@@ -9,7 +9,11 @@ function Service() {
           <div className=" flex flex-col md:flex-row justify-center items-center gap-10">
             <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
-                <img src="" alt="" />
+                <img
+                  className=" items-center"
+                  src="../../public/icons/ico3.png"
+                  alt=""
+                />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
                   Maquillage
                 </h5>
@@ -21,7 +25,11 @@ function Service() {
             </div>
             <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
-                <img src="" alt="" />
+                <img
+                  className=" items-center"
+                  src="../../public/icons/ico2.png"
+                  alt=""
+                />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
                   Coiffure Femme
                 </h5>
@@ -33,7 +41,11 @@ function Service() {
             </div>
             <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
-                <img src="" alt="" />
+                <img
+                  className=" items-center"
+                  src="../../public/icons/ico1.png"
+                  alt=""
+                />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
                   Pose perruque
                 </h5>

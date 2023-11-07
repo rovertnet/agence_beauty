@@ -1,5 +1,3 @@
-
-
 function Footer() {
   return (
     <>
@@ -153,23 +151,23 @@ function Footer() {
           <p className=" text-base text-slate-300">@ Artha Beauté 2023, tous droits réservés</p>
           <div className="flex items-center space-x-5">
             <img
-              className=" w-22 h-12 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-              src="../../public/EVVLog.png"
+              className=" w-10 h-10 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+              src="../../public/X.png"
+              alt="réseaux"
+            />
+            <img
+              className=" w-10 h-10 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+              src="../../public/instagram.png"
+              alt="réseaux"
+            />
+            <img
+              className=" w-10 h-10 cursor-pointer hover:-translate-y-4 transition-all duration-300"
+              src="../../public/facebook.png"
               alt="réseaux"
             />
             <img
               className=" w-22 h-12 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-              src="../../public/EVVLog.png"
-              alt="réseaux"
-            />
-            <img
-              className=" w-22 h-12 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-              src="../../public/EVVLog.png"
-              alt="réseaux"
-            />
-            <img
-              className=" w-22 h-12 cursor-pointer hover:-translate-y-4 transition-all duration-300"
-              src="../../public/EVVLog.png"
+              src="../../public/tiktok.png"
               alt="réseaux"
             />
           </div>
