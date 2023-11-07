@@ -48,12 +48,24 @@ function Mission() {
             </button>
           </motion.div>
         </div>
-         {/*  */}
+        {/*  */}
         <div className=" flex flex-col md:flex-row-reverse justify-center items-center gap-8">
-          <div className=" md:w-1/2">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" md:w-1/2"
+          >
             <img src="../../public/cote.png" alt="ùission" />
-          </div>
-          <div className=" md:w-2/5">
+          </motion.div>
+          <motion.div
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" md:w-2/5"
+          >
             <h2 className=" md:text-4xl text-center text-3xl font-extrabold mb-2 leading-normal text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               Nos valeurs
             </h2>
@@ -78,7 +90,7 @@ function Mission() {
             <button className="py-3 text-xl shadow-md px-6 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:bg-purple-500 transition-all duration-300">
               Contactez-nous
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

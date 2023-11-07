@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+
 function Service() {
   return (
     <>
@@ -7,7 +10,13 @@ function Service() {
       >
         <div className=" md:p-9 px-4 py-9">
           <div className=" flex flex-col md:flex-row justify-center items-center gap-10">
-            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
+            >
               <div>
                 <img
                   className=" items-center"
@@ -22,8 +31,14 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </div>
-            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
+            >
               <div>
                 <img
                   className=" items-center"
@@ -38,8 +53,14 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </div>
-            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
+            </motion.div>
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
+            >
               <div>
                 <img
                   className=" items-center"
@@ -54,7 +75,7 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -62,4 +83,4 @@ function Service() {
   );
 }
 
-export default Service
+export default Service;
