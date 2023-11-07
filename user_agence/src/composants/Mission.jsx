@@ -1,12 +1,17 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Mission() {
   return (
     <>
       <div className=" md:px-14 p-4 max-w-s mx-auto space-y-7">
         <div className=" flex flex-col  md:flex-row justify-between items-center gap-8">
-          <div className=" md:w-1/2">
+          <motion.div 
+            
+            className=" md:w-1/2"
+          >
             <img src="../../public/marthe.png" alt="ùission" />
-          </div>
+          </motion.div>
           <div className=" md:w-3/5">
             <h2 className=" md:text-4xl text-center text-3xl font-extrabold mb-2 leading-normal text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               La mission de Artha Beauté
@@ -73,4 +78,4 @@ function Mission() {
   );
 }
 
-export default Mission
+export default Mission;
