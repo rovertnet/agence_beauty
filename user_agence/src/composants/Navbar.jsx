@@ -71,7 +71,7 @@ function Navbar() {
       >
         {navItems.map(({ link, path }) => (
           <Link
-            className=" block text-[#ecc6de]  hover:text-[#c654c6] cursor-pointer"
+            className=" block text-[#ecc6de] hover:text-[#ffffff] cursor-pointer"
             spy={true}
             smooth={true}
             offset={-100}
