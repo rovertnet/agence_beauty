@@ -1,20 +1,36 @@
+import {motion} from 'framer-motion';
+import { fadeIn } from '../variants';
 
 function Home() {
   return (
     <>
-      <div className=" md:px-12 p-4 max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..." id="accueil">
+      <div
+        className=" md:px-12 p-4 max-w-screen-2xl mx-auto pt-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ..."
+        id="accueil"
+      >
         <div className=" md:p-9 px-4 py-9">
           <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10">
             {/* image */}
-            <div>
+            <motion.div
+              variants={fadeIn("down", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+            >
               <img
                 className=" lg:h-full w-full"
                 src="../../public/Portraithome.png"
                 alt="a propos"
               />
-            </div>
+            </motion.div>
             {/* La présentation */}
-            <div className=" md:w-full">
+            <motion.div
+              variants={fadeIn("down", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" md:w-full"
+            >
               <h2 className=" md:text-4xl text-3xl font-bold text-white mb-6 leading-relaxed">
                 Je suis le premier de ce bannier, en répresentant Artha beauté.
               </h2>
@@ -32,7 +48,7 @@ function Home() {
                   A propos
                 </button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
