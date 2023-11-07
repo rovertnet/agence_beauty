@@ -23,7 +23,12 @@ function Navbar() {
         <div className=" text-lg container mx-auto flex justify-between items-center">
           <div className=" flex items-center space-x-10">
             <a href="#">
-              <img className=" h-12" id="accueil" src="../../public/AB.png" alt="logo" />
+              <img
+                className=" h-12"
+                id="accueil"
+                src="../../public/AB.png"
+                alt="logo"
+              />
             </a>
 
             {/* Show menu */}
@@ -31,6 +36,7 @@ function Navbar() {
               {navItems.map(({ link, path }) => (
                 <Link
                   className=" block hover:text-[#c654c6] cursor-pointer"
+                  onactiveclass='active'
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -71,12 +77,13 @@ function Navbar() {
       >
         {navItems.map(({ link, path }) => (
           <Link
-            className=" block text-[#ecc6de] hover:text-[#ffffff] cursor-pointer"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-80}
             key={link}
             to={path}
+            className=" block text-[#ecc6de] hover:text-[#ffffff] cursor-pointer"
+            onClick={toggleMenu}
           >
             {link}
           </Link>
