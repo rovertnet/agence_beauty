@@ -68,9 +68,13 @@ function Tarif() {
           </div>
         </div>
         {/*  */}
-        <motion.div 
-          
-          className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20 md:w-11/12 mx-auto"
+        >
           {packages.map((pkg, index) => (
             <div
               key={index}

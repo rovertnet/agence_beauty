@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Banner() {
   return (
     <>
       <div className=" md:px-14 px-4 max-w-screen-2xl mx-auto my-12">
         <div className=" md:p-9 px-4 py-9 bg-violet-500 rounded-tl-[100px] rounded-br-[100px]">
-          <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10"
+          >
             {/* image */}
             <div>
               <img
@@ -30,11 +38,11 @@ function Banner() {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
   );
 }
 
-export default Banner
+export default Banner;
