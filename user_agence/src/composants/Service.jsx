@@ -16,17 +16,13 @@ function Service() {
             viewport={{ once: false, amount: 0.7 }}
             className=" flex flex-col md:flex-row justify-center items-center gap-10"
           >
-            <motion.div
-              variants={fadeIn("right", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+            <div
               className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
             >
               <div>
                 <img
                   className=" items-center"
-                  src="../../public/icons/ico3.png"
+                  src="../../public/images/maquillage.png"
                   alt=""
                 />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
@@ -37,18 +33,14 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+            </div>
+            <div
               className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
             >
               <div>
                 <img
                   className=" items-center"
-                  src="../../public/icons/ico2.png"
+                  src="../../public/images/coiffure.png"
                   alt=""
                 />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
@@ -59,18 +51,15 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+            </div>
+            <div
+              
               className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
             >
               <div>
                 <img
                   className=" items-center"
-                  src="../../public/icons/ico1.png"
+                  src="../../public/images/perruque.png"
                   alt=""
                 />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
@@ -81,7 +70,7 @@ function Service() {
                   Dignissimos velit numquam rerum officiis quis,
                 </p>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
