@@ -9,7 +9,13 @@ function Service() {
         id="service"
       >
         <div className=" md:p-9 px-4 py-9">
-          <div className=" flex flex-col md:flex-row justify-center items-center gap-10">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className=" flex flex-col md:flex-row justify-center items-center gap-10"
+          >
             <motion.div
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -76,7 +82,7 @@ function Service() {
                 </p>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
