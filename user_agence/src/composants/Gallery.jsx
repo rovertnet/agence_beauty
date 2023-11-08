@@ -1,26 +1,31 @@
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 function Gallery() {
-    const images = [
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(1).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(2).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(3).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(4).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(5).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(6).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(7).webp",
-      "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(8).webp",
-    ];
+  const images = [
+    "../../public/images/1.png",
+    "../../public/images/2.png",
+    "../../public/images/3.png",
+    "../../public/images/4.png",
+    "../../public/images/5.png",
+    "../../public/images/6.png",
+    "../../public/images/7.png",
+    "../../public/images/8.png",
+  ];
   return (
     <>
       <div className=" container mx-auto px-5 py-2 md:px-14" id="realisation">
         <h2 className="md:text-4xl text-center text-3xl mb-10 font-extrabold leading-normal my-6">
           Nos réalisations <br />
-          <span className="font-normal text-base mb-0">
-            en images toutes
-          </span>
+          <span className="font-normal text-base mb-0">en images toutes</span>
         </h2>
-        <div className="-m-1 flex flex-wrap md:-m-2">
+        <motion.div
+          variants={fadeIn("down", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="-m-1 flex flex-wrap md:-m-2"
+        >
           {images.map((image, index) => (
             <div
               key={index}
@@ -32,10 +37,10 @@ function Gallery() {
               />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
 }
 
-export default Gallery
+export default Gallery;
