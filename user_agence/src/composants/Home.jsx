@@ -12,7 +12,7 @@ function Home() {
           <div className=" flex flex-col md:flex-row-reverse justify-between items-center gap-10">
             {/* image */}
             <motion.div
-              variants={fadeIn("down", 0.7)}
+              variants={fadeIn("right", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
@@ -25,7 +25,7 @@ function Home() {
             </motion.div>
             {/* La présentation */}
             <motion.div
-              variants={fadeIn("down", 0.7)}
+              variants={fadeIn("down", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
