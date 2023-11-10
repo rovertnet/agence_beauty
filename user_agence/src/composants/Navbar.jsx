@@ -53,6 +53,7 @@ function Navbar() {
             <button className=" bg-purple-500 py-2 px-4 translate-all duration-300 rounded-3xl text-white hover:border-2 hover:border-purple-500 hover:text-purple-500 hover:bg-white">
               Sign up
             </button>
+            {/* modal */}
           </div>
           {/* Show bouton menu */}
           <div className=" md:hidden">

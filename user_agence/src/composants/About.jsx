@@ -17,10 +17,11 @@ function About() {
               A propos de Artha Beauté
             </h3>
             <p className=" text-xl text-gray-700 text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-              laudantium illum, illo esse aliquam explicabo placeat, fugiat
-              molestiae mollitia, enim est rem nam nesciunt eius. Sequi saepe
-              porro id maiores?
+              Artha Beauté, a été fondé avec la mission de donner à chaque
+              client l'expérience ultime en matière de beauté. Notre équipe est
+              passionnée par l'art du maquillage et de la coiffure, et nous nous
+              engageons à offrir un service personnalisé et de haute qualité à
+              chacun de nos clients.
             </p>
           </motion.div>
           {/*  */}

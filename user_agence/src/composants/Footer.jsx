@@ -24,8 +24,8 @@ function Footer() {
               />
             </a>
             <p className=" md:w-1/2 text-slate-200">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
-              laudantium illum.
+              Bienvenue sur le site de notre agence de maquillage et coiffure
+              pour femmes!
             </p>
             <div className=" py-4">
               <input

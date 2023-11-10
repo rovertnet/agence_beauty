@@ -16,9 +16,7 @@ function Service() {
             viewport={{ once: false, amount: 0.7 }}
             className=" flex flex-col md:flex-row justify-center items-center gap-10"
           >
-            <div
-              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
-            >
+            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
                 <img
                   className=" items-center"
@@ -26,17 +24,15 @@ function Service() {
                   alt=""
                 />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
-                  Maquillage
+                  Maquillage Pro
                 </h5>
                 <p className=" text-center text-base ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos velit numquam rerum officiis quis,
+                  Notre équipe de maquilleurs professionnels sait comment mettre
+                  en valeur votre beauté naturelle.
                 </p>
               </div>
             </div>
-            <div
-              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
-            >
+            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
                 <img
                   className=" items-center"
@@ -44,18 +40,16 @@ function Service() {
                   alt=""
                 />
                 <h5 className=" text-center text-2xl font-semibold text-violet-600 py-3">
-                  Coiffure Femme
+                  Coiffure Perso
                 </h5>
-                <p className=" text-center text-base ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dignissimos velit numquam rerum officiis quis,
+                <p className=" text-center text-md ">
+                  Nous nous spécialisons dans la création de coiffures qui
+                  reflètent votre style personnel et mettent en valeur votre
+                  beauté unique.
                 </p>
               </div>
             </div>
-            <div
-              
-              className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer"
-            >
+            <div className=" bg-white shadow-md rounded-md px-6 py-5 hover:-translate-y-4 transition-all duration-300 cursor-pointer">
               <div>
                 <img
                   className=" items-center"

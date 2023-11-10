@@ -32,13 +32,12 @@ function Home() {
               className=" md:w-full"
             >
               <h2 className=" md:text-4xl text-3xl font-bold text-white mb-6 leading-relaxed">
-                Je suis le premier de ce bannier, en répresentant Artha beauté.
+                Révélez la beauté qui est en vous en vous offrant nos services !
               </h2>
               <p className=" text-[#f3f4f5] text-2xl mb-5 md:text-justify text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dignissimos sint facere ad, veniam earum quas quasi! Commodi
-                officiis, aperiam libero, asperiores cum quasi optio dolorum
-                quidem, tenetur est laboriosam aliquam.
+                Bienvenue sur le site de notre agence de maquillage et coiffure
+                pour femmes, où la beauté et l'élégance se rencontrent pour
+                révéler votre véritable éclat.
               </p>
               <div className=" space-x-5 space-y-4 ">
                 <button className=" py-3 px-6 rounded-3xl bg-pink-500 text-white hover:bg-purple-500 transition-all duration-300">
