@@ -69,7 +69,7 @@ function About() {
                 <div>
                   <img
                     className=" lg:h-full"
-                    src="../../public/robertr.png"
+                    src="../../public/profile_robert.png"
                     alt="about"
                   />
                   <h5 className=" text-2xl text-white font-bold px-5 text-center mt-2">
