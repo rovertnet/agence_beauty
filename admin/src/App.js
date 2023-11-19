@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './composants/Navbar';
 import Sidebar from './composants/Sidebar';
+import Dashboard from './composants/dashboard/Dashboard';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <div>
           <Navbar />
         </div>
-        <div></div>
+        <div>
+          <Dashboard />
+        </div>
       </div>
     </div>
   );

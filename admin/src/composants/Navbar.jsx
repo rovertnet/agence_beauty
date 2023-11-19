@@ -11,7 +11,7 @@ const Navbar = (props) => {
     setThemeMode(!themeMode)
   }
   return (
-    <div className=" md:px-14 bg-slate-200 dark:bg-gray-900 w-full h-full px-3 py-4 shadow-md">
+    <div className=" md:px-14 bg-white dark:bg-gray-900 w-full h-full px-3 py-4 shadow-md">
       <div className=" flex items-center justify-between">
         <div className=" flex items-center justify-center">
           <input
@@ -32,7 +32,7 @@ const Navbar = (props) => {
             <RiSettings2Fill className=" text-[#6c49f9] text-2xl" />
           </button>
           <button
-            className={` rounded-full text-2xl bg-slate-200 hover:bg-slate-300 hover:rounded-full ${
+            className={` rounded-full text-2xl hover:bg-[#bb8eff74] hover:p-2 hover:rounded-full ${
               themeMode ? "text-black" : "text-black"
             }`}
             onClick={toggleThemeMode}

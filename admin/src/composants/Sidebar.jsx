@@ -18,18 +18,21 @@ const Sidebar = () => {
         </h1>
       </div>
       <div className=" py-2 border-b-[1px] border-[#ececee]/[0.3] text-md text-white">
-        <a href="#" className="flex items-center gap-1 font-bold text-[1rem]">
+        <a
+          href="#"
+          className="flex items-center gap-1 font-bold text-[1rem] border-l-[3px] border-white pl-4 bg-[#bb8eff74] py-2"
+        >
           <RxDashboard />
           DashBoard
         </a>
       </div>
-      <div className=" pt-[10px] border-b-[1px] border-[#ececee]/[0.3]">
+      <div className=" pt-[5px] border-b-[1px] border-[#ececee]/[0.3]">
         <p className="text-[10px] font-extrabold leading-[16px] text-white/[0.4]">
           INTERFACE
         </p>
         <a
           href="#"
-          className=" flex items-center justify-between gap-[10px] py-[15px] text-white"
+          className=" flex items-center justify-between gap-[10px] py-2 hover:border-white hover:pl-4 hover:border-l-[3px] hover:border-white text-white hover:bg-[#bb8eff74]"
         >
           <div className=" flex items-center gap-1">
             <BsFillInfoSquareFill />
@@ -39,7 +42,7 @@ const Sidebar = () => {
         </a>
         <a
           href="#"
-          className=" flex items-center justify-between gap-[10px] py-[10px] text-white"
+          className=" flex items-center justify-between gap-[10px] py-[10px] text-white hover:border-white hover:pl-4 hover:border-l-[3px] hover:border-white hover:bg-[#bb8eff74]"
         >
           <div className=" flex items-center gap-1">
             <BiSolidMessageSquareDots />
@@ -55,7 +58,7 @@ const Sidebar = () => {
         </p>
         <a
           href="#"
-          className=" flex items-center justify-between gap-[10px] py-[15px] text-white"
+          className=" flex items-center justify-between gap-[10px] py-2 text-white hover:border-white hover:pl-4 hover:border-l-[3px] hover:border-white hover:bg-[#bb8eff74]"
         >
           <div className=" flex items-center gap-1">
             <FaUsersGear />
@@ -65,7 +68,7 @@ const Sidebar = () => {
         </a>
         <a
           href="#"
-          className=" flex items-center justify-between gap-[10px] py-[10px] text-white"
+          className=" flex items-center justify-between gap-[10px] py-[10px] text-white hover:border-white hover:pl-4 hover:border-l-[3px] hover:border-white hover:bg-[#bb8eff74]"
         >
           <div className=" flex items-center gap-1">
             <BiSolidMessageRoundedDots />
@@ -85,7 +88,9 @@ const Sidebar = () => {
         <p className=" text-center text-[12px] leading-[10px] font-normal text-white/[0.4]">
           Dans l'écrin douillet de notre agence de beauté, chaque visite devient
         </p>
-        <button className="bg-[#9200d0] text-white py-3 px-2 rounded-md text-base">upgrade to pro!</button>
+        <button className="bg-[#9200d0] text-white py-3 px-2 rounded-md text-md">
+          upgrade to pro!
+        </button>
       </div>
     </div>
   );
