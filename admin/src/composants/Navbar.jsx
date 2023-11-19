@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { RiSettings2Fill } from "react-icons/ri";
 import { RiNotificationFill } from "react-icons/ri";
+import { MdSunny } from "react-icons/md";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const Navbar = (props) => {
-  
+  const [themeMode, setThemeMode] = useState(false);
+  const toggleThemeMode = () => {
+    setThemeMode(!themeMode)
+  }
   return (
-    <div className=" md:px-14 bg-slate-200 w-full h-full px-3 py-4 shadow-md">
+    <div className=" md:px-14 bg-slate-200 dark:bg-gray-900 w-full h-full px-3 py-4 shadow-md">
       <div className=" flex items-center justify-between">
         <div className=" flex items-center justify-center">
           <input
@@ -26,7 +31,14 @@ const Navbar = (props) => {
           <button>
             <RiSettings2Fill className=" text-[#6c49f9] text-2xl" />
           </button>
-
+          <button
+            className={` rounded-full text-2xl bg-slate-200 hover:bg-slate-300 hover:rounded-full ${
+              themeMode ? "text-black" : "text-black"
+            }`}
+            onClick={toggleThemeMode}
+          >
+            {themeMode ? <MdSunny /> : <BsFillMoonStarsFill />}
+          </button>
         </div>
       </div>
     </div>
