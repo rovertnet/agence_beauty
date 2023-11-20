@@ -14,7 +14,7 @@ function App() {
         <div>
           <Navbar />
         </div>
-        <div>
+        <div className=' mt-14'>
           <Dashboard />
         </div>
       </div>
