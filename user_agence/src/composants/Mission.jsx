@@ -22,7 +22,7 @@ function Mission() {
             viewport={{ once: false, amount: 0.7 }}
             className=" md:w-2/5"
           >
-            <h2 className=" md:text-4xl text-center text-3xl font-extrabold mb-2 leading-normal text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <h2 className=" md:text-4xl  text-3xl font-extrabold mb-2 leading-normal text-blue-800">
               Notre mission
             </h2>
             <p className=" text-slate-500 text-xl mb-3 text-justify">
@@ -47,7 +47,7 @@ function Mission() {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
             className=" md:w-1/2"
           >
             <img src="../../public/cote.png" alt="ùission" />
@@ -56,7 +56,7 @@ function Mission() {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
             className=" md:w-2/5"
           >
             <h2 className=" md:text-4xl text-center text-3xl font-extrabold mb-2 leading-normal text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
